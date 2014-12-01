@@ -4,6 +4,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
         <link rel="stylesheet" href="style.css" />
         <script src="script.js"></script>
+        <script src="github.js"></script>
     </head>
     <body ng-controller="MainController">
 
@@ -11,8 +12,8 @@
         <div>{{error}}</div>
     
         {{ countdown }}
-        <form name="searchUser" ng-submit="search()">
-            <input type="search" required placeholder="Username to find" ng-model="username" />
+        <form name="searchUser" ng-submit="search(username)">
+            <input type="search" required ng-model="username" />
             <input type="submit" value="Search" />
         </form>
 
