@@ -5,7 +5,9 @@
 
     var app = angular.module("githubViewer", []);
 
-    var MainController = function($scope, $http, $interval, $log) {
+    var MainController = function (
+        $scope, $http, $interval,
+        $log, $anchorScroll, $location) {
 
         var onUserComplete = function(response) {
             $scope.user = response.data;
@@ -15,6 +17,8 @@
 
         var onRepos = function(response) {
             $scope.repos = response.data;
+            $location.hash("userDetails");
+            $anchorScroll();
         };
 
         var onError = function(reason) {
