@@ -65,11 +65,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="angular.js" />
+    <Content Include="app.js" />
     <Content Include="github.js" />
     <Content Include="Index.html" />
-    <Content Include="script.js" />
-    <Content Include="userdetails.html" />
+    <Content Include="main.html" />
+    <Content Include="MainController.js" />
+    <Content Include="repo.html" />
+    <Content Include="RepoController.js" />
+    <Content Include="style.css" />
+    <Content Include="UserController.js" />
+    <Content Include="user.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
